@@ -1,0 +1,22 @@
+{
+  "name": "heroku-node-deploy",
+  "version": "1.0.0",
+  "description": "heroku-node-deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kysewtts/heroku-node-deploy.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kysewtts/heroku-node-deploy/issues"
+  },
+  "homepage": "https://github.com/kysewtts/heroku-node-deploy#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
