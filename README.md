@@ -18,12 +18,37 @@ Steps:-
    $git clone https://github.com/kysewtts/heroku-node-deploy.git
    
    This will initialize git in your project folder and monitor your progress. Also , git is required to push to Heroku so this is an    important step.
+   You can initialize a .gitignore file but it is optional.
 
 2.)Create a webpage that you would be serving with Node.js
-   Before going through to the code of Node , make sure that you create a package.json file . This file will keep track of all our 
-   dependancies in the project. Use the command,
+   Before going through to the code of Node , make sure that you create a package.json file in the root folder of your project . This file will keep track of all our dependancies in the project. 
+   
+   Use the command,
    
    $npm init 
    
    It will throw a series a questions, keep on pressing return key. (Use <$npm init --yes> in case you want the default values to be    taken up.)
+   Make sure to check the version of node using , 
+   
+   $node --version
+   
+   This should be the specified correctly in package.json file .
+   
+ 3.)In this project, I have used express framework of node. To install express , use , 
+ 
+    $npm install express --save
+    
+  This will install express as a dependancy in package.json file.
+  
+  
+  4.)Now, we will be creating a Procfile file. This file explicitly tells the command to run our web app.
+     Note that Procfile (name is case-sensitive , should be written exactly as it is), should not have any extension.
+     
+    Procfile has this line ,
+    
+    web: node index.js
+    
+   
+     
+     
 
