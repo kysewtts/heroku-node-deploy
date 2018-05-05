@@ -1,8 +1,9 @@
 var express = require('express');
+var port = process.env.PORT || 5000;
 var app = express();
 
-app.use(express.static('views'));
-
-app.listen(5000 , function(){
+var index = app.listen(port , function(){
   console.log("Server listening at port 5000");
 });
+
+app.use(express.static('views'));
