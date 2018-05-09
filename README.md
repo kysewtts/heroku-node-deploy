@@ -27,7 +27,7 @@ Steps:-
    
     $npm init 
    
-   It will throw a series a questions, keep on pressing return key. (Use <$npm init --yes> in case you want the default values to be    taken up.)
+  It will throw a series a questions, keep on pressing return key. (Use <$npm init --yes> in case you want the default values to be    taken up.)
    Make sure to check the version of node using , 
    
     $node --version
@@ -44,7 +44,7 @@ Steps:-
   4.)Now, we will be creating a Procfile file. This file explicitly tells the command to run our web app.
      Note that Procfile (name is case-sensitive , should be written exactly as it is), should not have any extension.
      
-    Procfile has this line ,
+   Procfile has this line ,
     
     web: node index.js
 
@@ -53,7 +53,7 @@ Steps:-
 
     $heroku login
    
-     This is ask us for the Email ID and password associated with our Heroku account.
+   This is ask us for the Email ID and password associated with our Heroku account.
      
 
   6.)Upon successful login , use 
@@ -61,15 +61,15 @@ Steps:-
     
     $heroku create 
 
-    This will generate a name for your app and also provide you with a URL on which your app will be running.
-    Also it will initialize a git repo to which we will be pushing our code for deployment.
+   This will generate a name for your app and also provide you with a URL on which your app will be running.
+   Also it will initialize a git repo to which we will be pushing our code for deployment.
 
 
   7.)Now to deploy your code , use ,
 
     $git push heroku master
 
-     After this, you will notice that your app is successfully deployed. Go to https://<your-app-name>.herokuapp.com to see your app is action.
+   After this, you will notice that your app is successfully deployed. Go to https://<your-app-name>.herokuapp.com to see your app is action.
 
 
   8.)Heroku has dynos which are used for hosting the apps. The free account that we have created allows a single dyno for our app to run.
